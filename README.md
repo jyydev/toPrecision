@@ -22,3 +22,16 @@ import toPrecision from "toprecision"
 
 console.log(toPrecision(0.01234, 3)) // output: 0.0123
 ```
+
+## Parameters
+
+```
+toPrecision(value, precision)
+```
+
+where
+
+- value = any number
+- precision = integer (1-100)
+  - if omitted, toPrecision will return back the value
+  - if value is outisde 1-100, error will be emitted
