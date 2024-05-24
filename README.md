@@ -1,6 +1,6 @@
 # About
 
-toPrecision is a npm module similar to built-in [.toPrecision](https://www.w3schools.com/jsref/jsref_toprecision.asp), but without exponential notation.
+[toPrecision](https://www.npmjs.com/package/toprecision) is a npm module similar to built-in [.toPrecision](https://www.w3schools.com/jsref/jsref_toprecision.asp), but without exponential notation.
 
 toPrecision VS default .toPrecision:
 
@@ -12,13 +12,13 @@ toPrecision VS default .toPrecision:
 In terminal (navigate to your project folder first):
 
 ```
-npm i toPrecision
+npm i toprecision
 ```
 
 then in your .js file, include this code to start using:
 
 ```
-import toPrecision from "toPrecision"
+import toPrecision from "toprecision"
 
-console.log(0.01234, 3) // output: 0.0123
+console.log(toPrecision(0.01234, 3)) // output: 0.0123
 ```
