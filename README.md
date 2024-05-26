@@ -1,8 +1,8 @@
 # About
 
-[toPrecision](https://www.npmjs.com/package/toprecision) is a npm module similar to built-in [.toPrecision](https://www.w3schools.com/jsref/jsref_toprecision.asp), but without exponential notation.
+[toPrecision](https://www.npmjs.com/package/toprecision) is a npm module similar to built-in [.toPrecision()](https://www.w3schools.com/jsref/jsref_toprecision.asp), but without exponential notation.
 
-toPrecision VS default .toPrecision:
+toPrecision() VS default .toPrecision():
 
 - without exponential notation (eg 1.23e4)
 - Both numbers in string ('123') and numbers (123) are supported.
