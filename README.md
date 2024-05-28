@@ -38,6 +38,6 @@ toPrecision(value, precision, comma = true)
   - true / 1: default value (will return **string**: 1,200)
   - false / 0: will return **number** without separator
 
-#### return
+### return
 
 default return value is string
