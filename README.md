@@ -7,6 +7,7 @@ toPrecision() VS default .toPrecision():
 - without exponential notation (eg 1.23e4)
 - Both numbers in string ('123') and numbers (123) are supported.
 - optional thousand separator (1,200)
+- optional currency symbol ($200)
 
 ## Installation
 
@@ -27,7 +28,7 @@ console.log(toPrecision(0.01234, 3)) // output: 0.0123
 ## Parameters
 
 ```
-toPrecision(value, precision, comma = true)
+function toPrecision(val, prec, { comma, dollar, prefix })
 ```
 
 - value = any number
@@ -37,6 +38,12 @@ toPrecision(value, precision, comma = true)
 - comma = bool (true, 1 / false, 0)
   - true / 1: default value (will return **string**: 1,200)
   - false / 0: will return **number** without separator
+- dollar = bool (true, 1 / false, 0)
+  - true / 1: return dollar sign ($200)
+  - false / 0: default value without dollar sign (200)
+- prefix = string
+  - eg: € => €200, $ => $200, USD => USD200
+  - default value: '' (empty_string)
 
 ### return
 
