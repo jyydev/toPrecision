@@ -1,7 +1,7 @@
-function toPrecision(val, prec, { comma, dollar, prefix }) {
-  if (typeof comma === "undefined") comma = 1;
-  if (typeof dollar === "undefined") dollar = 0;
-  if (typeof prefix === "undefined") prefix = "";
+function toPrecision(val, prec, ob = {}) {
+  let comma = ob.comma || 1;
+  let dollar = ob.dollar || 0;
+  let prefix = ob.prefix || "";
 
   let r = Number(Number(val).toPrecision(prec));
   if (!prefix && dollar) prefix = "$";
@@ -13,5 +13,4 @@ function toPrecision(val, prec, { comma, dollar, prefix }) {
   }
   return r;
 }
-
 module.exports = toPrecision;
