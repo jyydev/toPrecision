@@ -36,15 +36,18 @@ function toPrecision(val, prec, { comma, dollar, prefix })
   - if omitted, toPrecision will return back the value
   - if value is outisde 1-100, error will be emitted
 - optional
-  - comma = bool (true, 1 / false, 0)
+  - comma/c = bool (true, 1 / false, 0)
     - true / 1: default value (will return **string**: 1,200)
     - false / 0: will return **number** without separator
-  - dollar = bool (true, 1 / false, 0)
+  - dollar/d = bool (true, 1 / false, 0)
     - true / 1: return dollar sign ($200)
     - false / 0: default value without dollar sign (200)
-  - prefix = string
+  - prefix/pre/p = string
     - eg: € => €200, $ => $200, USD => USD200
     - default value: '' (empty_string)
+  - k = bool (true, 1 / false, 0)
+    - true / 1: return with k behind if value >= 1000 (1.2k)
+    - false / 0: default value without k (1200)
 
 ### return
 
