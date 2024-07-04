@@ -37,8 +37,8 @@ function toPrecision(val, prec, { comma, dollar, prefix })
   - if value is outisde 1-100, error will be emitted
 - optional
   - comma/c = bool (true, 1 / false, 0)
-    - true / 1: default value (will return **string**: 1,200)
-    - false / 0: will return **number** without separator
+    - true / 1: will return **string**: 1,200
+    - false / 0: default value, will return **number** without separator
   - dollar/d = bool (true, 1 / false, 0)
     - true / 1: return dollar sign ($200)
     - false / 0: default value without dollar sign (200)
